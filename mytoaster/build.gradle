@@ -23,17 +23,17 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '11'
+        jvmTarget = '17'
     }
 }
 
 
 group = 'com.github.lincoln4791'
-version = '1.0.1'
+version = '1.0.5'
 
 afterEvaluate {
     publishing {
@@ -42,7 +42,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.lincoln4791'
                 artifactId = 'MyToaster'
-                version = '1.0.1'
+                version = '1.0.5'
             }
         }
         repositories {
