@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
             //showToast()
             ToastUtils.ShowToast(this)
         }
-
     }
 
     fun showToast(){
