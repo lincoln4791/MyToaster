@@ -33,7 +33,7 @@ android {
 
 
 group = 'com.github.lincoln4791'
-version = '1.0.5'
+version = '1.0.6'
 
 afterEvaluate {
     publishing {
@@ -42,7 +42,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.lincoln4791'
                 artifactId = 'MyToaster'
-                version = '1.0.5'
+                version = '1.0.6'
             }
         }
         repositories {
