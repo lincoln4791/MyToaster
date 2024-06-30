@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    //For jitpack publish
+    id 'maven-publish'
 }
 
 android {
@@ -26,6 +28,30 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+}
+
+group = 'com.github.lincoln4791'
+version = '1.0.1'
+group = 'com.github.lincoln4791'
+version = '1.0.1'
+
+group = 'com.github.lincoln4791'
+version = '1.0.1'
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.lincoln4791'
+                artifactId = 'MyToaster'
+                version = '1.0.1'
+            }
+        }
+        repositories {
+            mavenLocal()
+        }
     }
 }
 
